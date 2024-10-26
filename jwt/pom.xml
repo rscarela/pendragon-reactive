@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.rscarela.security</groupId>
         <artifactId>reactive-pendragon</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <groupId>org.rscarela.security.reactive.pendragon</groupId>
