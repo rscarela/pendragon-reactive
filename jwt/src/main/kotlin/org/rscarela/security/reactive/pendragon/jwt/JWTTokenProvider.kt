@@ -6,8 +6,9 @@ import io.jsonwebtoken.MalformedJwtException
 import io.jsonwebtoken.SignatureAlgorithm
 import io.jsonwebtoken.UnsupportedJwtException
 import io.jsonwebtoken.security.Keys
-import org.rscarela.security.reactive.pendragon.jwt.credentials.AuthenticatedUser
-import org.rscarela.security.reactive.pendragon.jwt.credentials.AuthenticatedUserProvider
+import org.rscarela.security.reactive.pendragon.core.UserAuthentication
+import org.rscarela.security.reactive.pendragon.core.credentials.AuthenticatedUser
+import org.rscarela.security.reactive.pendragon.core.credentials.AuthenticatedUserProvider
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.security.core.Authentication

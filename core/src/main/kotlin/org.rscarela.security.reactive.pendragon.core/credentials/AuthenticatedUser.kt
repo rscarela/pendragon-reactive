@@ -1,4 +1,6 @@
-package org.rscarela.security.reactive.pendragon.jwt.credentials
+package org.rscarela.security.reactive.pendragon.core.credentials
+
+import java.io.Serializable
 
 /**
  * Representation of any class that must behave as a
@@ -13,7 +15,7 @@ package org.rscarela.security.reactive.pendragon.jwt.credentials
  * @since 1.0.0
  * @author Renan Scarela
  */
-interface AuthenticatedUser {
+interface AuthenticatedUser : Serializable {
 
     /**
      * A unique identifier is the only requirement for

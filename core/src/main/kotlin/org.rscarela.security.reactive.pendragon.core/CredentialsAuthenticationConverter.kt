@@ -1,7 +1,7 @@
-package org.rscarela.security.reactive.pendragon.jwt
+package org.rscarela.security.reactive.pendragon.core
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import org.rscarela.security.reactive.pendragon.jwt.credentials.UserCredentials
+import org.rscarela.security.reactive.pendragon.core.credentials.UserCredentials
 import org.springframework.core.io.buffer.DataBufferUtils
 import org.springframework.core.io.buffer.DataBuffer
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
@@ -11,7 +11,7 @@ import org.springframework.web.server.ServerWebExchange
 import reactor.core.publisher.Mono
 import java.nio.charset.StandardCharsets
 
-class JWTAuthenticationConverter(
+class CredentialsAuthenticationConverter(
     private val objectMapper: ObjectMapper,
     private val credentialsType: Class<out UserCredentials>,
 ) : ServerAuthenticationConverter {

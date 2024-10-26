@@ -1,6 +1,6 @@
-package org.rscarela.security.reactive.pendragon.jwt
+package org.rscarela.security.reactive.pendragon.core
 
-import org.rscarela.security.reactive.pendragon.jwt.credentials.AuthenticatedUser
+import org.rscarela.security.reactive.pendragon.core.credentials.AuthenticatedUser
 import org.springframework.security.core.Authentication
 import org.springframework.security.core.GrantedAuthority
 import kotlin.jvm.Throws

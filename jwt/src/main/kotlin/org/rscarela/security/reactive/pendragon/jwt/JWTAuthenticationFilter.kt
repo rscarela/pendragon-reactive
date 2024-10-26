@@ -1,7 +1,8 @@
 package org.rscarela.security.reactive.pendragon.jwt
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import org.rscarela.security.reactive.pendragon.jwt.credentials.UserCredentials
+import org.rscarela.security.reactive.pendragon.core.CredentialsAuthenticationConverter
+import org.rscarela.security.reactive.pendragon.core.credentials.UserCredentials
 import org.springframework.security.authentication.ReactiveAuthenticationManager
 import org.springframework.security.core.Authentication
 import org.springframework.security.web.server.WebFilterExchange
@@ -21,7 +22,7 @@ class JWTAuthenticationFilter(
         // Set up the path matcher to trigger this filter only for specific routes
         setRequiresAuthenticationMatcher(ServerWebExchangeMatchers.pathMatchers(url))
         // Set up the authentication converter to extract credentials from the request body
-        setServerAuthenticationConverter(JWTAuthenticationConverter(objectMapper, credentialsType))
+        setServerAuthenticationConverter(CredentialsAuthenticationConverter(objectMapper, credentialsType))
         // Handle successful authentication by adding the JWT token to the response
         setAuthenticationSuccessHandler { webFilterExchange, authentication ->
             handleSuccess(webFilterExchange, authentication)

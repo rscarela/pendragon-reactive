@@ -1,4 +1,4 @@
-package org.rscarela.security.reactive.pendragon.jwt.configuration
+package org.rscarela.security.reactive.pendragon.core.configuration
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpMethod

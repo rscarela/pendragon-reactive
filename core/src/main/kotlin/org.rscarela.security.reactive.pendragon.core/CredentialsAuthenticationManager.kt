@@ -1,8 +1,7 @@
-package org.rscarela.security.reactive.pendragon.jwt.providers
+package org.rscarela.security.reactive.pendragon.core
 
-import org.rscarela.security.reactive.pendragon.jwt.UserAuthentication
-import org.rscarela.security.reactive.pendragon.jwt.credentials.AuthenticatedUser
-import org.rscarela.security.reactive.pendragon.jwt.credentials.AuthenticatedUserProvider
+import org.rscarela.security.reactive.pendragon.core.credentials.AuthenticatedUser
+import org.rscarela.security.reactive.pendragon.core.credentials.AuthenticatedUserProvider
 import org.springframework.security.authentication.BadCredentialsException
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.Authentication

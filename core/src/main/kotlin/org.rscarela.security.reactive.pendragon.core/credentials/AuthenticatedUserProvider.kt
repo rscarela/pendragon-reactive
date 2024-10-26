@@ -1,4 +1,4 @@
-package org.rscarela.security.reactive.pendragon.jwt.credentials
+package org.rscarela.security.reactive.pendragon.core.credentials
 
 import java.util.Optional
 

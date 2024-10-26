@@ -1,6 +1,8 @@
-package org.rscarela.security.reactive.pendragon.jwt.credentials
+package org.rscarela.security.reactive.pendragon.core.credentials
 
-interface UserCredentials {
+import java.io.Serializable
+
+interface UserCredentials : Serializable {
 
     /**
      * @return username required for authentication.
